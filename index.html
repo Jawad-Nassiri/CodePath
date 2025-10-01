@@ -11,14 +11,10 @@
   </head>
   <body>
     <header class="header">
+      <!-- Top Bar -->
       <div class="top-bar">
         <div class="container-fluid">
-          <!-- Menu icon  -->
-            <div class="top-bar__menu-icon">
-                <i class="fa-solid fa-bars menu-icon"></i>
-            </div>
           <div class="top-bar__content">
-            
             <div class="top-bar__left">
               <div class="top-bar__email">
                 <i class="fa-solid fa-envelope top-bar__email-icon"></i>
@@ -35,12 +31,9 @@
               </div>
             </div>
 
+            <!-- Right side (Links) -->
             <div class="top-bar__right">
               <ul class="top-bar__menu">
-                <!-- Close icon  -->
-                <li class="top-bar__item top-bar__close-icon">
-                  <i class="fa-solid fa-xmark close-icon"></i>
-                </li>
                 <li class="top-bar__item">
                   <a href="#" class="top-bar__link">HTML</a>
                 </li>
@@ -64,10 +57,155 @@
                 </li>
               </ul>
             </div>
-            
           </div>
         </div>
       </div>
+
+      <!-- Navbar -->
+      <div class="main-header">
+          <div class="container-fluid">
+              <div class="main-header__content">
+
+                  <div class="main-header__left">
+                      <a href="#" class="main-header__search-btn">
+                          <i class="fa-solid fa-magnifying-glass main-header__search-icon"></i>
+                      </a>
+
+                      <a href="#" class="main-header__cart-btn">
+                          <i class="fa-solid fa-cart-shopping main-header__cart-icon"></i>
+                      </a>
+
+                      <a href="#" class="main-header__profile">
+                        <i class="fa-solid fa-user"></i>
+                          <span class="main-header__profile_text">John Dora</span>
+                      </a>
+                  </div>
+
+                  <div class="main-header__right">
+
+                    <div class="main-header__xmark">
+                        <i class="fa-solid fa-xmark main-header__xmark-icon"></i>
+                    </div>
+
+                    <ul class="main-header__menu" id="mainMenu">
+                        <li class="main-header__item">
+                            <a href="#" class="main-header__link">Home</a>
+                        </li>
+
+                        <li class="main-header__item">
+                            <a href="#" class="main-header__link">
+                                Front End
+                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
+                                <ul class="main-header__dropdown">
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn HTML</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn CSS</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn JavaScript</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn React</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn Vue.js</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li class="main-header__item">
+                            <a href="#" class="main-header__link">
+                                Back End
+                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
+                                <ul class="main-header__dropdown">
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn Node.js</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn Python</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn PHP</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn Java</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn Ruby</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Learn Databases</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li class="main-header__item">
+                            <a href="#" class="main-header__link" onclick="toggleDropdown(event)">
+                                Security
+                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
+                                <ul class="main-header__dropdown">
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Web Security</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Ethical Hacking</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Cryptography</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Network Security</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Penetration Testing</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li class="main-header__item">
+                            <a href="#" class="main-header__link" onclick="toggleDropdown(event)">
+                                Blogs
+                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
+                                <ul class="main-header__dropdown">
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Latest Articles</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Tutorials</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">News & Updates</a>
+                                    </li>
+                                    <li class="main-header__dropdown-item">
+                                        <a href="#" class="main-header__dropdown-link">Career Tips</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+
+                        <li class="main-header__item">
+                            <a href="#" class="main-header__link">Soft Skills</a>
+                        </li>
+
+                    </ul>
+
+                      <img src="images/logo/logo.svg" alt="code-path-logo" class="main-header__logo">
+
+                      <div class="main-header__menubar">
+                        <i class="fa-solid fa-bars main-header__menubar-icon"></i>
+                      </div>
+
+                  </div>
+                  
+              </div>
+          </div>
+      </div>
+
     </header>
 
     <script src="js/script.js"></script>

@@ -1,0 +1,43 @@
+<svg id="logo" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="pathGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#2bce56;stop-opacity:0.6"/>
+                        <stop offset="100%" style="stop-color:#2bce56;stop-opacity:1"/>
+                    </linearGradient>
+                    
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                
+                <g transform="translate(20, 15)">
+                    <polygon points="40,10 70,25 70,55 40,70 10,55 10,25" fill="none" stroke="#2bce56" stroke-width="2.5" opacity="0.3"/>
+                    
+                    <path d="M 18 30 L 12 40 L 18 50" stroke="#2bce56" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+                    
+                    <path d="M 62 30 L 68 40 L 62 50" stroke="#2bce56" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+                    
+                    <path d="M 28 35 Q 35 40 40 40 T 52 45" stroke="url(#pathGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="2 4" filter="url(#glow)">
+                        <animate attributeName="stroke-dashoffset" from="0" to="12" dur="1.5s" repeatCount="indefinite"/>
+                    </path>
+                    
+                    <circle cx="40" cy="40" r="2.5" fill="#2bce56" opacity="0.8"/>
+                </g>
+                
+                <g transform="translate(110, 0)">
+                    <text x="0" y="50" font-family="'Segoe UI', 'Arial', sans-serif" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">
+                        CODE
+                    </text>
+                    <text x="0" y="50" font-family="'Segoe UI', 'Arial', sans-serif" font-size="42" font-weight="300" fill="#2bce56" letter-spacing="-1">
+                        <tspan dx="125">PATH</tspan>
+                    </text>
+                    
+                    <text x="0" y="75" font-family="'Segoe UI', 'Arial', sans-serif" font-size="13" font-weight="400" fill="#666666" letter-spacing="2">
+                        YOUR JOURNEY TO CODE
+                    </text>
+                </g>
+            </svg>
