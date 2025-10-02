@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
+    <!-- header start  -->
     <header class="header">
       <!-- Top Bar -->
       <div class="top-bar">
@@ -63,151 +64,240 @@
 
       <!-- Navbar -->
       <div class="main-header">
-          <div class="container-fluid">
-              <div class="main-header__content">
+        <div class="container-fluid">
+          <div class="main-header__content">
+            <div class="main-header__menubar">
+              <i class="fa-solid fa-bars main-header__menubar-icon"></i>
+            </div>
 
-                <div class="main-header__menubar">
-                  <i class="fa-solid fa-bars main-header__menubar-icon"></i>
+            <div class="main-header__left">
+              <a href="#" class="main-header__search-btn">
+                <i
+                  class="fa-solid fa-magnifying-glass main-header__search-icon"
+                ></i>
+              </a>
+
+              <a href="#" class="main-header__cart-btn">
+                <i class="fa-solid fa-cart-shopping main-header__cart-icon"></i>
+              </a>
+
+              <a href="#" class="main-header__profile">
+                <i class="fa-solid fa-user"></i>
+                <span class="main-header__profile_text">John Dora</span>
+              </a>
+            </div>
+
+            <div class="main-header__right">
+              <ul class="main-header__menu" id="mainMenu">
+                <div class="main-header__xmark">
+                  <i class="fa-solid fa-xmark main-header__xmark-icon"></i>
                 </div>
 
-                  <div class="main-header__left">
-                      <a href="#" class="main-header__search-btn">
-                          <i class="fa-solid fa-magnifying-glass main-header__search-icon"></i>
-                      </a>
+                <li class="main-header__item">
+                  <a href="#" class="main-header__link">Home</a>
+                </li>
 
-                      <a href="#" class="main-header__cart-btn">
-                          <i class="fa-solid fa-cart-shopping main-header__cart-icon"></i>
-                      </a>
-
-                      <a href="#" class="main-header__profile">
-                        <i class="fa-solid fa-user"></i>
-                          <span class="main-header__profile_text">John Dora</span>
-                      </a>
-                  </div>
-
-                  <div class="main-header__right">
-
-                    <ul class="main-header__menu" id="mainMenu">
-
-                      <div class="main-header__xmark">
-                        <i class="fa-solid fa-xmark main-header__xmark-icon"></i>
-                      </div>
-
-                        <li class="main-header__item">
-                            <a href="#" class="main-header__link">Home</a>
-                        </li>
-
-                        <li class="main-header__item has-dropdown">
-                            <a href="#" class="main-header__link">
-                                Front End
-                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
-                                <ul class="main-header__dropdown">
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn HTML</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn CSS</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn JavaScript</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn React</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn Vue.js</a>
-                                    </li>
-                                </ul>
-                            </a>
-                        </li>
-
-                        <li class="main-header__item has-dropdown">
-                            <a href="#" class="main-header__link">
-                                Back End
-                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
-                                <ul class="main-header__dropdown">
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn Node.js</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn Python</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn PHP</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn Java</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn Ruby</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Learn Databases</a>
-                                    </li>
-                                </ul>
-                            </a>
-                        </li>
-
-                        <li class="main-header__item has-dropdown">
-                            <a href="#" class="main-header__link">
-                                Security
-                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
-                                <ul class="main-header__dropdown">
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Web Security</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Ethical Hacking</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Cryptography</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Network Security</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Penetration Testing</a>
-                                    </li>
-                                </ul>
-                            </a>
-                        </li>
-
-                        <li class="main-header__item has-dropdown">
-                            <a href="#" class="main-header__link">
-                                Blogs
-                                <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
-                                <ul class="main-header__dropdown">
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Latest Articles</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Tutorials</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">News & Updates</a>
-                                    </li>
-                                    <li class="main-header__dropdown-item">
-                                        <a href="#" class="main-header__dropdown-link">Career Tips</a>
-                                    </li>
-                                </ul>
-                            </a>
-                        </li>
-
-                        <li class="main-header__item">
-                            <a href="#" class="main-header__link">Soft Skills</a>
-                        </li>
-
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Front End
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn HTML</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn CSS</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn JavaScript</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn React</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Vue.js</a
+                        >
+                      </li>
                     </ul>
+                  </a>
+                </li>
 
-                      <img src="images/logo/logo.svg" alt="code-path-logo" class="main-header__logo">
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Back End
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Node.js</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Python</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn PHP</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Java</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Ruby</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Databases</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
 
-                  </div>
-                  
-              </div>
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Security
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Web Security</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Ethical Hacking</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Cryptography</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Network Security</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Penetration Testing</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Blogs
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Latest Articles</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Tutorials</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >News & Updates</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Career Tips</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="main-header__item">
+                  <a href="#" class="main-header__link">Soft Skills</a>
+                </li>
+              </ul>
+
+              <img
+                src="images/logo/logo.svg"
+                alt="code-path-logo"
+                class="main-header__logo"
+              />
+            </div>
           </div>
+        </div>
       </div>
-
     </header>
+    <!-- header finished  -->
+
+    <section class="landing">
+      <div class="container">
+        <h1 class="landing__title">Learn Anything, Anytime</h1>
+        <h2 class="landing__subtitle">
+          Master skills in coding, design, and more with interactive lessons
+        </h2>
+
+        <div class="landing__searchbar">
+          <input
+            type="text"
+            class="landing__searchbar-input"
+            placeholder="What do you want to learn today?"
+          />
+          <button class="landing__searchbar-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass landing__searchbar-icon"></i>
+          </button>
+        </div>
+        <div class="landing-status">
+          <div class="landing-status__item">
+            <i class="fa-solid fa-graduation-cap landing-status__icon"></i>
+            <span class="landing-status__count">32,145</span>
+            <span class="landing-status__text">conversation</span>
+          </div>
+          <div class="landing-status__item">
+            <i class="fa-solid fa-clock"></i>
+            <span class="landing-status__count">32,145</span>
+            <span class="landing-status__text">conversation</span>
+          </div>
+          <div class="landing-status__item">
+            <i class="fa-solid fa-book"></i>
+            <span class="landing-status__count">32,145</span>
+            <span class="landing-status__text">conversation</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="js/script.js"></script>
   </body>

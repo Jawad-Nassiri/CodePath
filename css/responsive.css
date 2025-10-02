@@ -119,5 +119,55 @@
   .main-header .main-header__link {
     margin: 0;
     padding-left: 3rem;
+  }
+
+  /* navbar finished  */
+
+  /* landing start  */
+
+    
+  .landing .landing__title {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .landing .landing__subtitle {
+    font-size: 1.8rem;
+  }
+
+  .landing .landing__searchbar {
+    max-width: 450px;
+  }
+
+  .landing .landing-status {
+    gap: 5rem;
+  }
+
+  /* landing finished  */
+
 }
+
+
+
+@media (max-width: 480px) {
+    .landing .landing__title {
+      font-size: 3rem;
+    }
+
+  .landing .landing__subtitle {
+    font-size: 1.6rem;
+  }
+
+  .landing .landing__searchbar {
+    max-width: 350px;
+  }
+
+  .landing .landing__searchbar-input {
+    padding: 1rem 1rem 1rem 1.5rem;
+    font-size: 1.6rem;
+}
+
+  .landing .landing-status {
+    gap: 2rem;
+  }
 }
