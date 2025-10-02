@@ -1,14 +1,42 @@
-/* Start responsive for 1024px  */
+@media (max-width: 1200px) {
+  .main-header .container-fluid {
+    padding: 0;
+  }
 
+  .main-header .main-header__content {
+    padding: 1rem 0 1rem 2rem;
+  }
 
-/* Finish responsive for 1024px  */
+  .main-header .main-header__left {
+    gap: 1rem;
+  }
 
+  .main-header .main-header__profile {
+    gap: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+  }
 
-/* Start responsive for 768px  */
+  .main-header .main-header__logo {
+    display: none;
+  }
+
+  .main-header .main-header__menu {
+    gap: 0px;
+    width: 540px;
+  }
+
+  .main-header .main-header__link {
+    margin: 0 0 0 1.3rem;
+  }
+
+  .main-header .main-header__dropdown {
+    min-width: 175px;
+  }
+}
 
 @media (max-width: 768px) {
-    
-    /* Start top bar  */
+  /* top bar start  */
 
   .top-bar {
     height: 45px;
@@ -28,9 +56,68 @@
   .top-bar__right {
     margin-left: 2rem;
   }
-  
-    /* Finish top bar  */
 
+  /* top bar finished  */
+
+  /* navbar start  */
+
+  .main-header .main-header__content {
+    position: relative;
+  }
+
+  .main-header .main-header__xmark {
+    display: block;
+    margin-left: 25px;
+    margin-top: 15px;
+  }
+
+  .main-header .main-header__menubar {
+    display: block;
+    margin-top: 5px;
+  }
+
+  .main-header .main-header__right {
+    position: fixed;
+    right: -250px;
+    top: 45px;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 99999;
+  }
+
+  .main-header .main-header__menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 2rem;
+  }
+  .main-header .main-header__dropdown {
+    padding: 0;
+    position: static;
+    box-shadow: none;
+    background: #f8f9fa;
+    padding-left: 1rem;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 100%;
+    margin: 0;
+  }
+
+  .main-header .main-header__item.is-open .main-header__dropdown {
+    max-height: 500px;
+  }
+
+  .main-header .main-header__dropdown-link {
+    font-size: 1.3rem;
+  }
+
+  .main-header .main-header__link {
+    margin: 0;
+    padding-left: 3rem;
 }
-
-/* Finish responsive for 768px  */
+}

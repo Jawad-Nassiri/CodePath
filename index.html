@@ -1,10 +1,10 @@
+<!-- index.html  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Learn</title>
-    <link rel="stylesheet" href="vendor/Bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="vendor/Font-Awesom/css/all.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/index.css" />
@@ -66,6 +66,10 @@
           <div class="container-fluid">
               <div class="main-header__content">
 
+                <div class="main-header__menubar">
+                  <i class="fa-solid fa-bars main-header__menubar-icon"></i>
+                </div>
+
                   <div class="main-header__left">
                       <a href="#" class="main-header__search-btn">
                           <i class="fa-solid fa-magnifying-glass main-header__search-icon"></i>
@@ -83,16 +87,17 @@
 
                   <div class="main-header__right">
 
-                    <div class="main-header__xmark">
-                        <i class="fa-solid fa-xmark main-header__xmark-icon"></i>
-                    </div>
-
                     <ul class="main-header__menu" id="mainMenu">
+
+                      <div class="main-header__xmark">
+                        <i class="fa-solid fa-xmark main-header__xmark-icon"></i>
+                      </div>
+
                         <li class="main-header__item">
                             <a href="#" class="main-header__link">Home</a>
                         </li>
 
-                        <li class="main-header__item">
+                        <li class="main-header__item has-dropdown">
                             <a href="#" class="main-header__link">
                                 Front End
                                 <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
@@ -116,7 +121,7 @@
                             </a>
                         </li>
 
-                        <li class="main-header__item">
+                        <li class="main-header__item has-dropdown">
                             <a href="#" class="main-header__link">
                                 Back End
                                 <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
@@ -143,8 +148,8 @@
                             </a>
                         </li>
 
-                        <li class="main-header__item">
-                            <a href="#" class="main-header__link" onclick="toggleDropdown(event)">
+                        <li class="main-header__item has-dropdown">
+                            <a href="#" class="main-header__link">
                                 Security
                                 <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
                                 <ul class="main-header__dropdown">
@@ -167,8 +172,8 @@
                             </a>
                         </li>
 
-                        <li class="main-header__item">
-                            <a href="#" class="main-header__link" onclick="toggleDropdown(event)">
+                        <li class="main-header__item has-dropdown">
+                            <a href="#" class="main-header__link">
                                 Blogs
                                 <i class="fa-solid fa-chevron-down" style="font-size: 12px; margin-left: 5px;"></i>
                                 <ul class="main-header__dropdown">
@@ -195,10 +200,6 @@
                     </ul>
 
                       <img src="images/logo/logo.svg" alt="code-path-logo" class="main-header__logo">
-
-                      <div class="main-header__menubar">
-                        <i class="fa-solid fa-bars main-header__menubar-icon"></i>
-                      </div>
 
                   </div>
                   
