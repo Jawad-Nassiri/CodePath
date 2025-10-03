@@ -123,7 +123,7 @@
 
   /* navbar finished  */
 
-  /* landing start  */
+  /* home banner (landing) start  */
 
     
   .landing .landing__title {
@@ -143,16 +143,18 @@
     gap: 5rem;
   }
 
-  /* landing finished  */
+  /* home banner (landing) finished  */
 
 }
 
 
 
 @media (max-width: 480px) {
-    .landing .landing__title {
-      font-size: 3rem;
-    }
+
+  /* home banner (landing) start  */
+  .landing .landing__title {
+    font-size: 3rem;
+  }
 
   .landing .landing__subtitle {
     font-size: 1.6rem;
@@ -165,9 +167,12 @@
   .landing .landing__searchbar-input {
     padding: 1rem 1rem 1rem 1.5rem;
     font-size: 1.6rem;
-}
+  }
 
   .landing .landing-status {
     gap: 2rem;
   }
+
+  /* home banner (landing) finished  */
+
 }
