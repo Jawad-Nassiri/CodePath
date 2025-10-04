@@ -145,10 +145,34 @@
 
   /* home banner (landing) finished  */
 
+  /* about us section start  */
+
+  .box-container {
+    grid-template-columns: 1fr !important;
+  }
+
+  .box {
+    padding: 1.5rem;
+  }
+
+  .box__left-icon {
+    font-size: 2rem;
+  }
+
+  .box-right__title {
+    font-size: 1.5rem;
+  }
+
+  .box-right__subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* about us section finished  */
+
 }
 
 
-
+/* ! */
 @media (max-width: 480px) {
 
   /* home banner (landing) start  */
