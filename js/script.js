@@ -55,5 +55,3 @@ function closeDropdown(item) {
   icon.style.transform = 'rotate(0deg)';
   item.classList.remove('is-open');
 }
-
-
