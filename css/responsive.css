@@ -169,6 +169,32 @@
 
   /* about us section finished  */
 
+
+  /* footer start  */
+  .footer {
+    padding: 0 15px !important;
+  }
+
+  .footer .footer-content-box:nth-child(2) {
+    padding-left: 1rem
+  }
+
+  .footer .footer-content-box:last-child {
+    padding: 0rem;
+  }
+
+  .footer .footer-content-last-child {
+    padding-left: 1.5rem;
+    justify-content: flex-start;
+  }
+
+  .footer .footer-content-box:last-child .footer-content__title {
+    margin-left: 1rem;
+  }
+
+  /* footer finished  */
+
+
 }
 
 
