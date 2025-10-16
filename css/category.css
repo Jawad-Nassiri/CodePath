@@ -1,0 +1,124 @@
+@import "./variables.css";
+@import "./fonts.css";
+@import "./top-bar.css";
+@import "./responsive.css";
+@import "./navBar.css";
+@import "./default.css";
+@import "./footer.css";
+@import "./course-box.css";
+@import "./course-box.css";
+@import "./pagination.css";
+
+
+/* category courses section start  */
+section.courses {
+  max-width: 1400px;
+  margin: 5rem auto 0 auto;
+  padding: 0 2rem;
+}
+
+.courses-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  margin-bottom: 50px;
+}
+
+.courses-top-bar__form {
+  display: flex;
+  align-items: center;
+  border: 1px solid #a9a8a8;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+}
+
+.courses-top-bar__icon {
+  margin-right: 5px;
+  color: #a9a8a8;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+.courses-top-bar__input {
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  width: 200px;
+}
+
+.courses-top-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.courses-top-bar__selection {
+  position: relative;
+  cursor: pointer;
+}
+
+.courses-top-bar__selection-icon {
+  font-size: 1.8rem;
+  transition: all 0.5s ease;
+}
+
+.courses-top-bar__selection-title {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.courses-top-bar__selection-list {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #a9a8a8;
+  border-radius: 6px;
+  list-style: none;
+  padding: 0.5rem 0;
+  min-width: 180px;
+  z-index: 10;
+}
+
+.courses-top-bar__selection-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.courses-top-bar__selection-item:hover,
+.courses-top-bar__selection-item--active {
+  background-color: #f0f0f0;
+}
+
+.courses-top-bar__row-btn,
+.courses-top-bar__column-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: 2px;
+}
+
+.courses-top-bar__row-btn i,
+.courses-top-bar__column-btn i {
+  margin-left: 4px;
+}
+
+.courses-top-bar__row-btn:hover,
+.courses-top-bar__column-btn:hover,
+.courses-top-bar__icon--active {
+  background-color: #e0e0e0;
+}
+
+/* category courses section finished  */

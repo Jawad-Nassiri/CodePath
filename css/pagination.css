@@ -1,0 +1,32 @@
+/* pagination start  */
+
+.courses-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0;
+}
+
+.page-link {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.page-link:hover,
+.page-link.active {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.page-link.arrow {
+  font-weight: bold;
+}
+
+
+/* pagination finished  */

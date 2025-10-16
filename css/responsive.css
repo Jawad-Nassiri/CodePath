@@ -125,7 +125,6 @@
 
   /* home banner (landing) start  */
 
-    
   .landing .landing__title {
     font-size: 3.5rem;
     font-weight: 600;
@@ -169,14 +168,17 @@
 
   /* about us section finished  */
 
-
   /* footer start  */
   .footer {
     padding: 0 15px !important;
   }
 
+  .footer .footer-widgets::before {
+    width: 30rem;
+  }
+
   .footer .footer-content-box:nth-child(2) {
-    padding-left: 1rem
+    padding-left: 1rem;
   }
 
   .footer .footer-content-box:last-child {
@@ -194,13 +196,63 @@
 
   /* footer finished  */
 
+  /* category courses section start  */
 
+  .courses .courses-top-bar {
+    padding: 2rem 1rem;
+  }
+
+  .courses .courses-top-bar__left {
+    gap: 0rem;
+  }
+
+  .courses .courses-top-bar__form {
+    padding: 0.5rem;
+  }
+
+  .courses .courses-top-bar__icon {
+    font-size: 1.5rem;
+  }
+
+  .courses .courses-top-bar__input {
+    font-size: 1.5rem;
+    width: 140px;
+  }
+
+  /* category courses section finished  */
+
+  /* course main info start */
+  .course-info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .course-info .course-info__left,
+  .course-info .course-info__right {
+    flex: 1 1px;
+  }
+
+  .course-info .course-info__link {
+    margin-left: 1.7rem;
+  }
+
+  .course-info .course-info__title,
+  .course-info .course-info__desc {
+    text-align: center;
+  }
+
+  .course-info .course-info__video {
+    height: 300px;
+    width: 500px;
+  }
+
+  .course-info .course-info__social-media {
+    justify-content: center;
+  }
+  /* course main info finished */
 }
-
 
 /* ! */
 @media (max-width: 480px) {
-
   /* home banner (landing) start  */
   .landing .landing__title {
     font-size: 3rem;
@@ -225,4 +277,50 @@
 
   /* home banner (landing) finished  */
 
+  /* footer start  */
+  .footer .footer-widgets {
+    padding: 4rem 1rem;
+  }
+  .footer .footer-widgets::before {
+    width: 20rem;
+  }
+  /* footer finished  */
+
+  /* category courses section start  */
+
+  .courses-top-bar {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+  }
+  /* category courses section finished  */
+
+  /* breadcrumb start  */
+
+  .breadcrumb .breadcrumb__content {
+    gap: 10px;
+    padding: 20px 0 20px 10px;
+    flex-wrap: wrap;
+  }
+  .breadcrumb .breadcrumb__icon {
+    margin-left: 0px;
+  }
+  /* breadcrumb finished  */
+
+  /* course main info start */
+
+  .course-info {
+    padding: 60px 15px;
+  }
+
+  .course-info .course-info__title {
+    font-size: 22px;
+  }
+
+  .course-info .course-info__video {
+    height: 300px;
+    width: 380px;
+  }
+
+  /* course main info finished */
 }

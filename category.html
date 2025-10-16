@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="vendor/Font-Awesom/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/category.css" />
+  </head>
+  <body>
+    <!-- header start  -->
+    <header class="header">
+      <!-- Top Bar -->
+      <div class="top-bar">
+        <div class="container-fluid">
+          <div class="top-bar__content">
+            <div class="top-bar__left">
+              <div class="top-bar__email">
+                <i class="fa-solid fa-envelope top-bar__email-icon"></i>
+                <a href="mailto:leo1212@yahoo.com" class="top-bar__email-text"
+                  >leo1212@yahoo.com</a
+                >
+              </div>
+
+              <div class="top-bar__phone">
+                <i class="fa-solid fa-phone top-bar__phone-icon"></i>
+                <a href="tel:+99.221.36.45" class="top-bar__phone-text"
+                  >+99.221.36.45</a
+                >
+              </div>
+            </div>
+
+            <!-- Right side (Links) -->
+            <div class="top-bar__right">
+              <ul class="top-bar__menu">
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">HTML</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">CSS</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">Bootstrap</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">Javascript</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">React</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">Python</a>
+                </li>
+                <li class="top-bar__item">
+                  <a href="#" class="top-bar__link">$200</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar -->
+      <div class="main-header">
+        <div class="container-fluid">
+          <div class="main-header__content">
+            <div class="main-header__menubar">
+              <i class="fa-solid fa-bars main-header__menubar-icon"></i>
+            </div>
+
+            <div class="main-header__left">
+              <a href="#" class="main-header__search-btn">
+                <i
+                  class="fa-solid fa-magnifying-glass main-header__search-icon"
+                ></i>
+              </a>
+
+              <a href="#" class="main-header__cart-btn">
+                <i class="fa-solid fa-cart-shopping main-header__cart-icon"></i>
+              </a>
+
+              <a href="#" class="main-header__profile">
+                <i class="fa-solid fa-user"></i>
+                <span class="main-header__profile_text">John Dora</span>
+              </a>
+            </div>
+
+            <div class="main-header__right">
+              <ul class="main-header__menu" id="mainMenu">
+                <div class="main-header__xmark">
+                  <i class="fa-solid fa-xmark main-header__xmark-icon"></i>
+                </div>
+
+                <li class="main-header__item">
+                  <a href="#" class="main-header__link">Home</a>
+                </li>
+
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Front End
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn HTML</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn CSS</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn JavaScript</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn React</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Vue.js</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Back End
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Node.js</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Python</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn PHP</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Java</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Ruby</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Learn Databases</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Security
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Web Security</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Ethical Hacking</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Cryptography</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Network Security</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Penetration Testing</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="main-header__item has-dropdown">
+                  <a href="#" class="main-header__link">
+                    Blogs
+                    <i
+                      class="fa-solid fa-chevron-down"
+                      style="font-size: 12px; margin-left: 5px"
+                    ></i>
+                    <ul class="main-header__dropdown">
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Latest Articles</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Tutorials</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >News & Updates</a
+                        >
+                      </li>
+                      <li class="main-header__dropdown-item">
+                        <a href="#" class="main-header__dropdown-link"
+                          >Career Tips</a
+                        >
+                      </li>
+                    </ul>
+                  </a>
+                </li>
+
+                <li class="main-header__item">
+                  <a href="#" class="main-header__link">Soft Skills</a>
+                </li>
+              </ul>
+
+              <img
+                src="images/logo/logo.svg"
+                alt="code-path-logo"
+                class="main-header__logo"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header finished  -->
+
+    <!-- courses section start -->
+    <section class="courses">
+      <div class="container">
+        <div class="courses-top-bar">
+          <div class="courses-top-bar__left">
+            <div class="courses-top-bar__row-btn courses-top-bar__icon--active">
+              <i class="fas fa-border-all courses-top-bar__icon"></i>
+            </div>
+
+            <div class="courses-top-bar__column-btn">
+              <i class="fas fa-align-left courses-top-bar__icon"></i>
+            </div>
+
+            <div class="courses-top-bar__selection">
+              <span class="courses-top-bar__selection-title">
+                Arrange by default
+                <i
+                  class="fas fa-angle-down courses-top-bar__selection-icon"
+                ></i>
+              </span>
+              <ul class="courses-top-bar__selection-list">
+                <li
+                  class="courses-top-bar__selection-item courses-top-bar__selection-item--active"
+                >
+                  Lorem, ipsum dolor.
+                </li>
+                <li class="courses-top-bar__selection-item">
+                  Lorem, ipsum dolor.
+                </li>
+                <li class="courses-top-bar__selection-item">
+                  Lorem, ipsum dolor.
+                </li>
+                <li class="courses-top-bar__selection-item">
+                  Lorem, ipsum dolor.
+                </li>
+                <li class="courses-top-bar__selection-item">
+                  Lorem, ipsum dolor.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="courses-top-bar__right">
+            <form action="" class="courses-top-bar__form">
+              <i class="fa-solid fa-magnifying-glass courses-top-bar__icon"></i>
+              <input
+                type="text"
+                class="courses-top-bar__input"
+                placeholder="Search course"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="courses-content">
+          <div class="courses-box">
+            <a href="#" class="courses-box__link">
+              <img
+                src="images/img-placeholder.jpg"
+                alt="javascript course"
+                class="courses-box__img"
+              />
+            </a>
+
+            <div class="course_box__main">
+              <a href="#" class="course-box__title">JavaScript Expert Course</a>
+
+              <div class="course-box__rating-teacher">
+                <div class="course-box__teacher">
+                  <i
+                    class="fa-solid fa-chalkboard-user course-box__teacher-icon"
+                  ></i>
+                  <a href="#" class="course-box__teacher-link">Leo Louis</a>
+                </div>
+
+                <div class="course-box__rating">
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-regular fa-star course-box__empty-star"></i>
+                </div>
+              </div>
+
+              <div class="course-box__status">
+                <div class="course-box__users-icon">
+                  <i class="fa-solid fa-users course-box__users-icon"></i>
+                  <span class="course-box__users-count">250</span>
+                </div>
+                <span class="course-box__price">$699</span>
+              </div>
+            </div>
+
+            <div class="course-box__footer">
+              <a href="#" class="course-box__footer-link">
+                See More
+                <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="courses-box">
+            <a href="#" class="courses-box__link">
+              <img
+                src="images/img-placeholder.jpg"
+                alt="javascript course"
+                class="courses-box__img"
+              />
+            </a>
+
+            <div class="course_box__main">
+              <a href="#" class="course-box__title">JavaScript Expert Course</a>
+
+              <div class="course-box__rating-teacher">
+                <div class="course-box__teacher">
+                  <i
+                    class="fa-solid fa-chalkboard-user course-box__teacher-icon"
+                  ></i>
+                  <a href="#" class="course-box__teacher-link">Leo Louis</a>
+                </div>
+
+                <div class="course-box__rating">
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-regular fa-star course-box__empty-star"></i>
+                </div>
+              </div>
+
+              <div class="course-box__status">
+                <div class="course-box__users-icon">
+                  <i class="fa-solid fa-users course-box__users-icon"></i>
+                  <span class="course-box__users-count">250</span>
+                </div>
+                <span class="course-box__price">$699</span>
+              </div>
+            </div>
+
+            <div class="course-box__footer">
+              <a href="#" class="course-box__footer-link">
+                See More
+                <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="courses-box">
+            <a href="#" class="courses-box__link">
+              <img
+                src="images/img-placeholder.jpg"
+                alt="javascript course"
+                class="courses-box__img"
+              />
+            </a>
+
+            <div class="course_box__main">
+              <a href="#" class="course-box__title">JavaScript Expert Course</a>
+
+              <div class="course-box__rating-teacher">
+                <div class="course-box__teacher">
+                  <i
+                    class="fa-solid fa-chalkboard-user course-box__teacher-icon"
+                  ></i>
+                  <a href="#" class="course-box__teacher-link">Leo Louis</a>
+                </div>
+
+                <div class="course-box__rating">
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-regular fa-star course-box__empty-star"></i>
+                </div>
+              </div>
+
+              <div class="course-box__status">
+                <div class="course-box__users-icon">
+                  <i class="fa-solid fa-users course-box__users-icon"></i>
+                  <span class="course-box__users-count">250</span>
+                </div>
+                <span class="course-box__price">$699</span>
+              </div>
+            </div>
+
+            <div class="course-box__footer">
+              <a href="#" class="course-box__footer-link">
+                See More
+                <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="courses-box">
+            <a href="#" class="courses-box__link">
+              <img
+                src="images/img-placeholder.jpg"
+                alt="javascript course"
+                class="courses-box__img"
+              />
+            </a>
+
+            <div class="course_box__main">
+              <a href="#" class="course-box__title">JavaScript Expert Course</a>
+
+              <div class="course-box__rating-teacher">
+                <div class="course-box__teacher">
+                  <i
+                    class="fa-solid fa-chalkboard-user course-box__teacher-icon"
+                  ></i>
+                  <a href="#" class="course-box__teacher-link">Leo Louis</a>
+                </div>
+
+                <div class="course-box__rating">
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-regular fa-star course-box__empty-star"></i>
+                </div>
+              </div>
+
+              <div class="course-box__status">
+                <div class="course-box__users-icon">
+                  <i class="fa-solid fa-users course-box__users-icon"></i>
+                  <span class="course-box__users-count">250</span>
+                </div>
+                <span class="course-box__price">$699</span>
+              </div>
+            </div>
+
+            <div class="course-box__footer">
+              <a href="#" class="course-box__footer-link">
+                See More
+                <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="courses-box">
+            <a href="#" class="courses-box__link">
+              <img
+                src="images/img-placeholder.jpg"
+                alt="javascript course"
+                class="courses-box__img"
+              />
+            </a>
+
+            <div class="course_box__main">
+              <a href="#" class="course-box__title">JavaScript Expert Course</a>
+
+              <div class="course-box__rating-teacher">
+                <div class="course-box__teacher">
+                  <i
+                    class="fa-solid fa-chalkboard-user course-box__teacher-icon"
+                  ></i>
+                  <a href="#" class="course-box__teacher-link">Leo Louis</a>
+                </div>
+
+                <div class="course-box__rating">
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-regular fa-star course-box__empty-star"></i>
+                </div>
+              </div>
+
+              <div class="course-box__status">
+                <div class="course-box__users-icon">
+                  <i class="fa-solid fa-users course-box__users-icon"></i>
+                  <span class="course-box__users-count">250</span>
+                </div>
+                <span class="course-box__price">$699</span>
+              </div>
+            </div>
+
+            <div class="course-box__footer">
+              <a href="#" class="course-box__footer-link">
+                See More
+                <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="courses-box">
+            <a href="#" class="courses-box__link">
+              <img
+                src="images/img-placeholder.jpg"
+                alt="javascript course"
+                class="courses-box__img"
+              />
+            </a>
+
+            <div class="course_box__main">
+              <a href="#" class="course-box__title">JavaScript Expert Course</a>
+
+              <div class="course-box__rating-teacher">
+                <div class="course-box__teacher">
+                  <i
+                    class="fa-solid fa-chalkboard-user course-box__teacher-icon"
+                  ></i>
+                  <a href="#" class="course-box__teacher-link">Leo Louis</a>
+                </div>
+
+                <div class="course-box__rating">
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-solid fa-star course-box__star"></i>
+                  <i class="fa-regular fa-star course-box__empty-star"></i>
+                </div>
+              </div>
+
+              <div class="course-box__status">
+                <div class="course-box__users-icon">
+                  <i class="fa-solid fa-users course-box__users-icon"></i>
+                  <span class="course-box__users-count">250</span>
+                </div>
+                <span class="course-box__price">$699</span>
+              </div>
+            </div>
+
+            <div class="course-box__footer">
+              <a href="#" class="course-box__footer-link">
+                See More
+                <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses-pagination">
+          <a href="#" class="page-link arrow">&larr;</a>
+          <a href="#" class="page-link active">1</a>
+          <a href="#" class="page-link">2</a>
+          <a href="#" class="page-link">3</a>
+          <a href="#" class="page-link arrow">&rarr;</a>
+        </div>
+      </div>
+    </section>
+    <!-- courses section finished -->
+
+    <!-- footer start  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-widgets">
+          <div class="footer-content-box">
+            <span class="footer-content__title">About Us</span>
+            <p class="footer-content__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
+              ipsum dolores omnis voluptatibus error quasi, commodi eligendi
+              delectus saepe quia adipisci alias, molestias officiis possimus
+              quaerat. Nisi voluptas accusantium magnam? Corporis quae aperiam
+              vel officia numquam dicta ea. Quam deserunt a possimus vel
+              veritatis consequatur aperiam laboriosam soluta, sit doloribus
+              quidem?
+            </p>
+          </div>
+
+          <div class="footer-content-box">
+            <span class="footer-content__title">Read More</span>
+            <div class="footer-content__links">
+              <a href="#" class="footer-content__link"
+                >Lorem ipsum dolor sit amet consectetur.</a
+              >
+              <a href="#" class="footer-content__link"
+                >Lorem ipsum dolor sit amet consectetur</a
+              >
+              <a href="#" class="footer-content__link"
+                >Lorem ipsum dolor sit amet consectetur</a
+              >
+              <a href="#" class="footer-content__link"
+                >Lorem ipsum dolor sit amet</a
+              >
+            </div>
+          </div>
+
+          <div class="footer-content-box">
+            <span class="footer-content__title">Best Courses</span>
+            <div class="footer-content-last-child">
+              <div class="footer-content__left">
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+              </div>
+              <div class="footer-content__right">
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+                <a href="#">Lorem, ipsum.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <i class="fa-solid fa-copyright"></i>
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+      </div>
+    </footer>
+    <!-- footer finished  -->
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

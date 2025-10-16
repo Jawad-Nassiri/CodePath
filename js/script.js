@@ -12,8 +12,6 @@ closeNavbarIcon.addEventListener('click', () => {
 });
 
 
-// menubarIcon.addE
-
 // toggle the navbar dropdowns 
 const hasDropdowns = document.querySelectorAll('.has-dropdown');
 
@@ -54,4 +52,35 @@ function closeDropdown(item) {
   dd.style.transform = 'translateY(-10px)';
   icon.style.transform = 'rotate(0deg)';
   item.classList.remove('is-open');
+}
+
+
+// toggle the category selection menu 
+
+if (location.href.includes('category')) {
+  const selectionMenu = document.querySelector('.courses-top-bar__selection');
+  const arrowIcon = document.querySelector('.courses-top-bar__selection-icon');
+  const selectionList = document.querySelector('.courses-top-bar__selection-list');
+
+  let isMenuOpen = false;
+
+  selectionMenu.addEventListener('click', () => {
+    isMenuOpen = !isMenuOpen;
+
+    if (isMenuOpen) {
+      arrowIcon.style.transform = 'rotate(180deg)';
+      selectionList.style.display = 'block';
+    } else {
+      arrowIcon.style.transform = 'rotate(0)';
+      selectionList.style.display = 'none';
+    }
+  });
+
+  document.addEventListener('click', (event) => {
+    if (!selectionMenu.contains(event.target) && !selectionList.contains(event.target)) {
+      arrowIcon.style.transform = 'rotate(0)';
+      selectionList.style.display = 'none';
+      isMenuOpen = false;
+    }
+  })
 }
