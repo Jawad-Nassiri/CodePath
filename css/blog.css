@@ -1,0 +1,111 @@
+@import "./variables.css";
+@import "./fonts.css";
+@import "./responsive.css";
+@import "./top-bar.css";
+@import "./navBar.css";
+@import "./default.css";
+@import "./breadcrumb.css";
+@import "./footer.css";
+@import "./sideBar-courseBox.css";
+
+main.blog {
+  margin-top: 20px;
+}
+
+.col-4 .courses-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* course info quick links start  */
+
+.course-info__quick-links {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 15px;
+}
+
+.course-info__pertinent-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--dark-color);
+  margin-bottom: 10px;
+  display: block;
+}
+
+.sidebar-articles__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-articles__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #f9f9f9;
+  padding: 1.5rem 0 1.5rem 0.5rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+}
+
+.sidebar-articles__item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-articles__icon {
+  font-size: 1.7rem;
+}
+
+.sidebar-articles__link {
+  text-decoration: none;
+  font-size: 1.4rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-articles__link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* course info quick links finished  */
+
+/* course info last blogs start  */
+
+.course-info__last-blogs {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.course-info__last-blogs-title {
+  padding: 1.5rem 0 1rem 2.5rem;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.course-info__last-blogs-link:first-child {
+  border: none;
+}
+
+.course-info__last-blogs-link {
+  display: block;
+  padding: 15px 0;
+  border-top: 1px solid #ddd;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  padding-left: 2.5rem;
+}
+
+.course-info__last-blogs-link:hover {
+  color: var(--primary-color);
+  background: #f9f9f9;
+}
+
+/* course info last blogs finished  */

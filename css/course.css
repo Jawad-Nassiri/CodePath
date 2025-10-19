@@ -1,64 +1,18 @@
 @import "./variables.css";
 @import "./fonts.css";
-@import "./top-bar.css";
 @import "./responsive.css";
+@import "./top-bar.css";
 @import "./navBar.css";
 @import "./default.css";
+@import "./breadcrumb.css";
 @import "./footer.css";
+@import "./sideBar-courseBox.css";
 
-/* breadcrumb start  */
-.breadcrumb {
-  margin: 3rem 0 1rem 0;
-}
-
-.breadcrumb__content {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  max-width: 1300px;
-  background: #f0f2f7;
-  padding: 20px;
-  margin: 0 auto;
-  border-radius: 1rem;
-}
-
-.breadcrumb__content-home {
-  color: var(--primary-color);
-  font-size: 20px;
-}
-
-.breadcrumb__list {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  gap: 10px;
-  margin: 0;
-  padding: 0;
-}
-
-.breadcrumb__link {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-.breadcrumb__link:hover {
-  color: var(--primary-color);
-}
-
-.breadcrumb__icon {
-  margin-left: 5px;
-  color: #999;
-  font-size: 14px;
-}
-
-/* breadcrumb finished  */
 
 /* course main info start */
 
 .course-info {
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 
 .course-info .container {
@@ -148,7 +102,7 @@
 
 .main .container {
   max-width: 1300px;
-  margin: 50px auto 0 auto;
+  margin: 20px auto 0 auto;
   border-radius: 1rem;
 }
 
@@ -610,49 +564,3 @@
 }
 /* col4 course info access finished  */
 
-/* col 4 course info pertinent start   */
-
-.course-info__pertinent {
-  background: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 15px 15px 15px 10px; /* left padding 10px */
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.course-info__pertinent-title {
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--dark-color);
-}
-
-/* Boxes */
-.course-info__pertinent-box {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 6px;
-  transition: all 0.3s ease;
-}
-
-.course-info__pertinent-box:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.course-info__pertinent_img {
-  width: 50px;
-  height: 50px;
-  border-radius: 6px;
-  object-fit: cover;
-}
-
-.course-info__pertinent-box-text {
-  font-size: 1.4rem;
-  color: #555;
-}
-
-/* col 4 course info pertinent finished  */
