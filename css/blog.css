@@ -109,3 +109,59 @@ main.blog {
 }
 
 /* course info last blogs finished  */
+
+
+/* article col 8 start  */
+
+.article {
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.article-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-color);
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.article-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.article-header__category {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.4rem;
+  color: var(--dark-color);
+}
+
+.article-header__icon {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
+
+.article-header__link {
+  text-decoration: none;
+  color: var(--dark-color);
+  transition: color 0.3s ease;
+}
+
+.article-header__link:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.article-header__img {
+  width: 100%;
+  height: 600px;
+  border-radius: 1rem;
+}
+/* article col 8 finished  */
