@@ -4,8 +4,8 @@
 @import "./top-bar.css";
 @import "./navBar.css";
 @import "./default.css";
-@import "./breadcrumb.css";
 @import "./footer.css";
+@import "./breadcrumb.css";
 @import "./sideBar-courseBox.css";
 
 main.blog {
