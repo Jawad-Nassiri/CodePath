@@ -134,6 +134,10 @@
   font-weight: 700;
 }
 
+.landing-status__count.courses {
+  margin-top: 0;
+}
+
 .landing-status__text {
   font-size: 1.8rem;
 }

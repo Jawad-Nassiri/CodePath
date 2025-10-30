@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Sign-Up</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="vendor/Font-Awesom/css/all.min.css" />
     <link rel="stylesheet" href="css/reset.css" />
@@ -265,20 +265,44 @@
     <!-- login section start  -->
     <section class="login-register">
       <div class="login">
-        <span class="login__title">Log in to your account</span>
-        <span class="login__subtitle">We are happy to see you again</span>
+        <span class="login__title">Create new account</span>
+        <span class="login__subtitle">We are happy to have you in our family</span>
         <div class="login__new-member">
-          <span class="login__new-member-text">Are you new ?</span>
-          <a href="#" class="login__new-member-link">Sign Up</a>
+          <span class="login__new-member-text">Do you have an account ?</span>
+          <a href="#" class="login__new-member-link">Login</a>
         </div>
         <form action="#" class="login-form">
+          <div class="login-form__username fullname">
+            <input
+              type="text"
+              class="login-form__username-input fullname"
+              placeholder="Fullname :"
+            />
+            <i class="fa-solid fa-user login-form__username-icon"></i>
+          </div>
           <div class="login-form__username">
             <input
               type="text"
               class="login-form__username-input"
-              placeholder="Username or Email :"
+              placeholder="Username :"
             />
             <i class="fa-solid fa-user login-form__username-icon"></i>
+          </div>
+          <div class="login-form__username email">
+            <input
+              type="text"
+              class="login-form__username-input email"
+              placeholder="Email :"
+            />
+            <i class="fa-solid fa-envelope login-form__email-icon"></i>
+          </div>
+          <div class="login-form__username phone">
+            <input
+              type="text"
+              class="login-form__username-input phone"
+              placeholder="Phone :"
+            />
+            <i class="fa-solid fa-phone login-form__phone-icon"></i>
           </div>
           <div class="login-form__password">
             <input
@@ -289,7 +313,7 @@
             <i class="fa-solid fa-lock-open login-form__password-icon"></i>
           </div>
           <button class="login-form__btn" type="submit">
-            <span class="login-form__btn-text">Log in</span>
+            <span class="login-form__btn-text">Sign Up</span>
             <i class="fa-solid fa-right-from-bracket login-form__btn-icon"></i>
           </button>
           <div class="login-form__password-setting">
@@ -300,11 +324,6 @@
               />
               <span class="login-form__password-remember-text"
                 >Remember me</span
-              >
-            </label>
-            <label class="login-form__password-forget">
-              <a href="#" class="login-form__password-forget-text"
-                >Did you forget your password ?</a
               >
             </label>
           </div>

@@ -113,7 +113,9 @@
 }
 
 .login-form__username-icon,
-.login-form__password-icon {
+.login-form__password-icon,
+.login-form__email-icon,
+.login-form__phone-icon {
     color: #ccc;
     font-size: 2rem;
 }
