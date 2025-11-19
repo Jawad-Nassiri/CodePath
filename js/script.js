@@ -88,43 +88,42 @@ if (location.href.includes("category")) {
   });
 }
 
-
 //? home page
 
-// add type writer transition to home page title
-let landingTitleElem = document.querySelector(".landing__title");
-let landingTitleText = "Learn Anything, Anytime !";
-let currentIndex = 0;
+if (location.href.includes("index")) {
+  // add type writer transition to home page title
+  let landingTitleElem = document.querySelector(".landing__title");
+  let landingTitleText = "Learn Anything, Anytime !";
+  let currentIndex = 0;
 
-typeWriter(landingTitleElem, landingTitleText, currentIndex);
+  typeWriter(landingTitleElem, landingTitleText, currentIndex);
 
-function typeWriter(element, text, index) {
-  if (index < text.length) {
-    element.textContent += text[index];
-    index++;
+  function typeWriter(element, text, index) {
+    if (index < text.length) {
+      element.textContent += text[index];
+      index++;
+    }
+
+    setTimeout(() => typeWriter(element, text, index), 100);
   }
 
-  setTimeout(() => typeWriter(element, text, index), 100);
-}
+  // add type writer transition landing statistics
+  const studentsEl = document.querySelector(".landing-status__count.students");
+  const hoursEl = document.querySelector(".landing-status__count.hours");
+  const coursesEl = document.querySelector(".landing-status__count.courses");
 
+  const studentsTarget = 1002;
+  const hoursTarget = 2100;
+  const coursesTarget = 55;
 
-// add type writer transition landing statistics
-const studentsEl = document.querySelector('.landing-status__count.students');
-const hoursEl = document.querySelector('.landing-status__count.hours');
-const coursesEl = document.querySelector('.landing-status__count.courses');
+  countUp(studentsEl, studentsTarget, 0);
+  countUp(hoursEl, hoursTarget, 0);
+  countUp(coursesEl, coursesTarget, 0);
 
-const studentsTarget = 1002;
-const hoursTarget = 2100;
-const coursesTarget = 55;
-
-countUp(studentsEl, studentsTarget, 0);
-countUp(hoursEl, hoursTarget, 0);
-countUp(coursesEl, coursesTarget, 0);
-
-function countUp(element, target, current) {
-  if (current <= target) {
-    element.textContent = current;
-    setTimeout(() => countUp(element, target, current + 1), 1);
+  function countUp(element, target, current) {
+    if (current <= target) {
+      element.textContent = current;
+      setTimeout(() => countUp(element, target, current + 1), 1);
+    }
   }
 }
-

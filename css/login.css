@@ -5,6 +5,7 @@
 @import "./navBar.css";
 @import "./default.css";
 @import "./footer.css";
+@import './modal.css';
 
 .login-register {
   display: flex;

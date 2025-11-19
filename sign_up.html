@@ -262,20 +262,34 @@
     </header>
     <!-- header finished  -->
 
+    <!-- modal start -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="icon"><i></i></div>
+        <h2></h2>
+        <p></p>
+        <button class="modal-btn">OK</button>
+      </div>
+    </div>
+    <!-- modal finished -->
+
     <!-- login section start  -->
     <section class="login-register">
       <div class="login">
         <span class="login__title">Create new account</span>
-        <span class="login__subtitle">We are happy to have you in our family</span>
+        <span class="login__subtitle"
+          >We are happy to have you in our family</span
+        >
         <div class="login__new-member">
           <span class="login__new-member-text">Do you have an account ?</span>
           <a href="#" class="login__new-member-link">Login</a>
         </div>
-        <form action="#" class="login-form">
-          <div class="login-form__username fullname">
+        <form action="#" class="login-form sign-up">
+          <div class="login-form__username">
             <input
               type="text"
               class="login-form__username-input fullname"
+              id="fullname"
               placeholder="Fullname :"
             />
             <i class="fa-solid fa-user login-form__username-icon"></i>
@@ -284,22 +298,25 @@
             <input
               type="text"
               class="login-form__username-input"
+              id="username"
               placeholder="Username :"
             />
             <i class="fa-solid fa-user login-form__username-icon"></i>
           </div>
-          <div class="login-form__username email">
+          <div class="login-form__username">
             <input
               type="text"
               class="login-form__username-input email"
+              id="email"
               placeholder="Email :"
             />
             <i class="fa-solid fa-envelope login-form__email-icon"></i>
           </div>
-          <div class="login-form__username phone">
+          <div class="login-form__username">
             <input
               type="text"
               class="login-form__username-input phone"
+              id="phone"
               placeholder="Phone :"
             />
             <i class="fa-solid fa-phone login-form__phone-icon"></i>
@@ -308,11 +325,12 @@
             <input
               type="text"
               class="login-form__password-input"
+              id="password"
               placeholder="Password :"
             />
             <i class="fa-solid fa-lock-open login-form__password-icon"></i>
           </div>
-          <button class="login-form__btn" type="submit">
+          <button class="login-form__btn" id="sign-up-btn" type="submit">
             <span class="login-form__btn-text">Sign Up</span>
             <i class="fa-solid fa-right-from-bracket login-form__btn-icon"></i>
           </button>
@@ -406,7 +424,7 @@
     <!-- footer finished  -->
 
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/Font-Awesom/"></script>
     <script src="js/script.js"></script>
+    <script src="js/register.js" type="module"></script>
   </body>
 </html>
