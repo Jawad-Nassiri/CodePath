@@ -12,9 +12,10 @@ const register = async () => {
     !fullnameInputElem.value ||
     !usernameInputElem.value ||
     !emailInputElem.value ||
+    !phoneInputElem.value ||
     !passwordInputElem.value
   ) {
-    alert("Please fill all required fields");
+    showModal();
     return;
   }
 
@@ -35,17 +36,16 @@ const register = async () => {
 
   if (response.ok) {
     showModal(201);
+    fullnameInputElem.value = "";
+    usernameInputElem.value = "";
+    emailInputElem.value = "";
+    phoneInputElem.value = "";
+    passwordInputElem.value = "";
   } else if (response.status === 409) {
     showModal(409);
   } else {
     showModal();
   }
-
-  fullnameInputElem.value = "";
-  usernameInputElem.value = "";
-  emailInputElem.value = "";
-  phoneInputElem.value = "";
-  passwordInputElem.value = "";
 };
 
 export { register };

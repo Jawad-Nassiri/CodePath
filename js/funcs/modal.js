@@ -12,21 +12,21 @@ function showModal(statusCode) {
       icon: "fa-solid fa-check",
       color: "var(--primary-color)",
       title: "Success!",
-      message: "Your action was successful."
+      message: "Your action was successful.",
     },
     409: {
       icon: "fa-solid fa-times",
       color: "#FF4B5C",
       title: "Error!",
-      message: "Oops! This username or email already exists."
-    }
+      message: "Oops! This username or email already exists.",
+    },
   };
 
   const status = statusMap[statusCode] || {
     icon: "fa-solid fa-info",
-    color: "#999",
+    color: "var(--primary-color)",
     title: "Notice",
-    message: "Something happened."
+    message: "Invalid data. Please check your input.",
   };
 
   iconEl.className = status.icon;
@@ -37,8 +37,16 @@ function showModal(statusCode) {
 
   overlay.style.display = "flex";
 
-  btn.onclick = () => overlay.style.display = "none";
-  overlay.onclick = (e) => { if(e.target === overlay) overlay.style.display = "none"; };
+  btn.onclick = () => {
+    overlay.style.display = "none";
+    if (statusCode === 201) {
+      location.href = "http://127.0.0.1:5500/index.html";
+    }
+  };
+
+  overlay.onclick = (e) => {
+    if (e.target === overlay) overlay.style.display = "none";
+  };
 }
 
 export { showModal };
