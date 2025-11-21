@@ -9,3 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     register();
   });
 });
+
+
+console.log('register')

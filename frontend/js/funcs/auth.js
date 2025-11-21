@@ -41,6 +41,8 @@ const register = async () => {
     emailInputElem.value = "";
     phoneInputElem.value = "";
     passwordInputElem.value = "";
+
+    console.log(response)
   } else if (response.status === 409) {
     showModal(409);
   } else {
@@ -49,3 +51,4 @@ const register = async () => {
 };
 
 export { register };
+

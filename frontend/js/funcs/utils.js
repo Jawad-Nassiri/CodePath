@@ -1,4 +1,4 @@
-function showModal(statusCode) {
+const showModal = (statusCode) => {
   const overlay = document.querySelector(".modal-overlay");
   const modal = document.querySelector(".modal");
   const iconEl = modal.querySelector(".icon i");
@@ -49,4 +49,20 @@ function showModal(statusCode) {
   };
 }
 
-export { showModal };
+const setToLocalStorage = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value));
+}
+
+const getFromLocalStorage = (key) => {
+  const value = localStorage.getItem(key);
+  return value ? JSON.parse(value) : null;
+}
+
+const getToken = () => {
+  const user = localStorage.getItem('user');
+  return user ? JSON.parse(user).token : null;
+}
+
+
+
+export { showModal, setToLocalStorage, getFromLocalStorage, getToken };

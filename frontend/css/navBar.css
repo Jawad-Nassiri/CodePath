@@ -126,11 +126,11 @@
   padding: 1rem 0;
 }
 
-.main-header__item:hover .main-header__dropdown {
+/* .main-header__item:hover .main-header__dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-}
+} */
 
 .main-header__dropdown-link {
   display: block;
