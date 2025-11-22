@@ -40,29 +40,41 @@ const showModal = (statusCode) => {
   btn.onclick = () => {
     overlay.style.display = "none";
     if (statusCode === 201) {
-      location.href = "http://127.0.0.1:5500/index.html";
+      location.href = "http://127.0.0.1:5500/frontend/index.html";
     }
   };
 
   overlay.onclick = (e) => {
     if (e.target === overlay) overlay.style.display = "none";
+    if (statusCode === 201) {
+      location.href = "http://127.0.0.1:5500/frontend/index.html";
+    }
   };
-}
+};
 
-const setToLocalStorage = (key, value) => {
-  localStorage.setItem(key, JSON.stringify(value));
-}
+const setCookie = (key, value, days = 7) => {
+  const expires = new Date(Date.now() + days * 86400000).toUTCString();
+  document.cookie = `${key}=${encodeURIComponent(
+    JSON.stringify(value)
+  )}; expires=${expires}; path=/; Secure; SameSite=Strict`;
+};
 
-const getFromLocalStorage = (key) => {
-  const value = localStorage.getItem(key);
-  return value ? JSON.parse(value) : null;
-}
+const getCookie = (key) => {
+  const cookies = document.cookie.split("; ");
+  const cookie = cookies.find((c) => c.startsWith(key + "="));
+  return cookie ? JSON.parse(decodeURIComponent(cookie.split("=")[1])) : null;
+};
+
+const removeCookie = (key) => {
+  setCookie(key, "", -1);
+};
 
 const getToken = () => {
-  const user = localStorage.getItem('user');
-  return user ? JSON.parse(user).token : null;
-}
+  const user = getCookie("user");
+  return user ? user.token : null;
+};
+
+const isLogin = () => !!getToken();
 
 
-
-export { showModal, setToLocalStorage, getFromLocalStorage, getToken };
+export { showModal, setCookie, getCookie, removeCookie, getToken, isLogin };

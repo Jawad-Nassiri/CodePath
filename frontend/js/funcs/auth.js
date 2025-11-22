@@ -1,4 +1,4 @@
-import { showModal } from "./modal.js";
+import { showModal, setToLocalStorage } from "./utils.js";
 
 const register = async () => {
   const $ = document;
@@ -35,14 +35,17 @@ const register = async () => {
   });
 
   if (response.ok) {
+    const data = await response.json();
+    const userToken = data.accessToken;
+    console.log('user saved', userToken)
+    setToLocalStorage('user', { token: userToken})
+
     showModal(201);
     fullnameInputElem.value = "";
     usernameInputElem.value = "";
     emailInputElem.value = "";
     phoneInputElem.value = "";
     passwordInputElem.value = "";
-
-    console.log(response)
   } else if (response.status === 409) {
     showModal(409);
   } else {
@@ -51,4 +54,3 @@ const register = async () => {
 };
 
 export { register };
-
