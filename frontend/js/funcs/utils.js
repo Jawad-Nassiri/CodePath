@@ -24,7 +24,7 @@ const showModal = (statusCode) => {
 
   const status = statusMap[statusCode] || {
     icon: "fa-solid fa-info",
-    color: "var(--primary-color)",
+    color: "#0d6efd",
     title: "Notice",
     message: "Invalid data. Please check your input.",
   };
@@ -45,9 +45,10 @@ const showModal = (statusCode) => {
   };
 
   overlay.onclick = (e) => {
-    if (e.target === overlay) overlay.style.display = "none";
-    if (statusCode === 201) {
-      location.href = "http://127.0.0.1:5500/frontend/index.html";
+    if (!modal.contains(e.target)) {
+      overlay.style.display = "none";
+      if (statusCode === 201)
+        location.href = "http://127.0.0.1:5500/frontend/index.html";
     }
   };
 };
@@ -56,7 +57,7 @@ const setCookie = (key, value, days = 7) => {
   const expires = new Date(Date.now() + days * 86400000).toUTCString();
   document.cookie = `${key}=${encodeURIComponent(
     JSON.stringify(value)
-  )}; expires=${expires}; path=/; Secure; SameSite=Strict`;
+  )}; expires=${expires}; path=/; SameSite=Strict`;
 };
 
 const getCookie = (key) => {
@@ -75,6 +76,5 @@ const getToken = () => {
 };
 
 const isLogin = () => !!getToken();
-
 
 export { showModal, setCookie, getCookie, removeCookie, getToken, isLogin };
