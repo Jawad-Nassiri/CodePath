@@ -50,14 +50,53 @@ const register = async () => {
 
     const data = await res.json();
 
-    // store user token in cookies 
-    setCookie('user', { token: data.accessToken }, 7);
-
-
+    // store user token in cookies
+    setCookie("user", { token: data.accessToken }, 7);
   } catch (error) {
     console.error("Network or server error:", error);
     showModal(0);
   }
 };
 
-export { register };
+const login = async () => {
+  const identifierInput = document.querySelector("#identifier");
+  const passwordInput = document.querySelector("#password");
+
+  if (!identifierInput.value.trim() || !passwordInput.value.trim()) {
+    showModal(0);
+    return;
+  }
+
+  const userInfo = {
+    identifier: identifierInput.value.trim(),
+    password: passwordInput.value.trim(),
+  };
+
+  const res = await fetch("http://localhost:4000/v1/auth/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(userInfo),
+  });
+
+  console.log(res);
+
+  if (res.ok) {
+    showModal(200);
+    identifierInput.value = "";
+    passwordInput.value = "";
+
+    const data = await res.json();
+    // store user token in cookies
+    setCookie("user", { token: data.accessToken }, 7);
+
+
+  } else if (res.status === 401) {
+    showModal(401);
+  } else {
+    showModal(0);
+  }
+};
+
+export { register, login };

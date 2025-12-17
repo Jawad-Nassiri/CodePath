@@ -8,11 +8,23 @@ const showModal = (statusCode) => {
   const btn = modal.querySelector(".modal-btn");
 
   const statusMap = {
+    200: {
+      icon: "fa-solid fa-check",
+      color: "var(--primary-color)",
+      title: "Success!",
+      message: "Login successful.",
+    },
     201: {
       icon: "fa-solid fa-check",
       color: "var(--primary-color)",
       title: "Success!",
       message: "Your action was successful.",
+    },
+    401: {
+      icon: "fa-solid fa-times",
+      color: "#FF4B5C",
+      title: "Unauthorized",
+      message: "Invalid credentials.",
     },
     409: {
       icon: "fa-solid fa-times",
@@ -39,7 +51,7 @@ const showModal = (statusCode) => {
 
   btn.onclick = () => {
     overlay.style.display = "none";
-    if (statusCode === 201) {
+    if (statusCode === 201 || statusCode === 200) {
       location.href = "http://127.0.0.1:5500/frontend/index.html";
     }
   };
@@ -47,7 +59,7 @@ const showModal = (statusCode) => {
   overlay.onclick = (e) => {
     if (!modal.contains(e.target)) {
       overlay.style.display = "none";
-      if (statusCode === 201)
+      if (statusCode === 201 || statusCode === 200)
         location.href = "http://127.0.0.1:5500/frontend/index.html";
     }
   };

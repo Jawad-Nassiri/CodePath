@@ -262,6 +262,17 @@
     </header>
     <!-- header finished  -->
 
+    <!-- modal start -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <div class="icon"><i></i></div>
+        <h2></h2>
+        <p></p>
+        <button class="modal-btn">OK</button>
+      </div>
+    </div>
+    <!-- modal finished -->
+
     <!-- login section start  -->
     <section class="login-register">
       <div class="login">
@@ -277,6 +288,7 @@
               type="text"
               class="login-form__username-input"
               placeholder="Username or Email :"
+              id="identifier"
             />
             <i class="fa-solid fa-user login-form__username-icon"></i>
           </div>
@@ -285,10 +297,11 @@
               type="text"
               class="login-form__password-input"
               placeholder="Password :"
+              id="password"
             />
             <i class="fa-solid fa-lock-open login-form__password-icon"></i>
           </div>
-          <button class="login-form__btn" type="submit">
+          <button class="login-form__btn" id="login-btn" type="submit">
             <span class="login-form__btn-text">Log in</span>
             <i class="fa-solid fa-right-from-bracket login-form__btn-icon"></i>
           </button>
@@ -389,5 +402,6 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/Font-Awesom/"></script>
     <script src="js/script.js"></script>
+    <script src="js/login.js" type="module"></script>
   </body>
 </html>
