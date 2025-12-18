@@ -1,4 +1,4 @@
-import { showModal, setCookie } from "./utils.js";
+import { showModal, setCookie, getToken } from "./utils.js";
 
 const register = async () => {
   const $ = document;
@@ -80,8 +80,6 @@ const login = async () => {
     body: JSON.stringify(userInfo),
   });
 
-  console.log(res);
-
   if (res.ok) {
     showModal(200);
     identifierInput.value = "";
@@ -90,8 +88,6 @@ const login = async () => {
     const data = await res.json();
     // store user token in cookies
     setCookie("user", { token: data.accessToken }, 7);
-
-
   } else if (res.status === 401) {
     showModal(401);
   } else {
@@ -99,4 +95,17 @@ const login = async () => {
   }
 };
 
-export { register, login };
+const getMe = async () => {
+  const token = getToken();
+  if (!token) return;
+
+  const res = await fetch("http://localhost:4000/v1/auth/me", {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  });
+  const data = await res.json();
+  return data;
+};
+
+export { register, login, getMe };
