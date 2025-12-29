@@ -37,6 +37,46 @@ exports.create = async (req, res) => {
   return res.status(201).json(populatedCourse);
 };
 
+// exports.getAll = async (req, res) => {
+//   const courses = await courseModel
+//     .find()
+//     .populate("creator", "-password")
+//     .populate("categoryID")
+//     .lean()
+//     .sort({ _id: -1 });
+
+//   const registers = await courseUserModel.find({}).lean();
+//   const comments = await commentModel.find().lean();
+
+//   let allCourses = [];
+//   courses.forEach((course) => {
+//     let courseTotalScore = 5;
+//     let courseRegisters = registers.filter(
+//       (register) => register.course.toString() === course._id.toString()
+//     );
+
+//     let courseScores = comments.filter(
+//       (comment) => comment.course.toString() === course._id.toString()
+//     );
+
+//     courseScores.forEach((comment) => {
+//       courseTotalScore += Number(comment.score);
+//     });
+
+//     allCourses.push({
+//       ...course,
+//       categoryID: course.categoryID.title,
+//       creator: course.creator.name,
+//       registers: courseRegisters.length,
+//       courseAverageScore: Math.floor(
+//         courseTotalScore / (courseScores.length + 1)
+//       ),
+//     });
+//   });
+
+//   return res.json(allCourses);
+// };
+
 exports.getAll = async (req, res) => {
   const courses = await courseModel
     .find()
@@ -65,8 +105,8 @@ exports.getAll = async (req, res) => {
 
     allCourses.push({
       ...course,
-      categoryID: course.categoryID.title,
-      creator: course.creator.name,
+      categoryID: course.categoryID?.title || "Unknown",
+      creator: course.creator?.name || "Unknown",
       registers: courseRegisters.length,
       courseAverageScore: Math.floor(
         courseTotalScore / (courseScores.length + 1)
@@ -76,6 +116,7 @@ exports.getAll = async (req, res) => {
 
   return res.json(allCourses);
 };
+
 
 exports.getOne = async (req, res) => {
   const course = await courseModel

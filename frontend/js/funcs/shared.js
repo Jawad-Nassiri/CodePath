@@ -43,4 +43,80 @@ const showCoursesInTopBar = async () => {
   }
 };
 
-export { showUsernameInNavbar, showCoursesInTopBar };
+let showAllCourses = false;
+let coursesData = [];
+
+const renderCourses = (showAll) => {
+  const coursesContainer = document.querySelector(".courses-content");
+  coursesContainer.innerHTML = ""; 
+
+  coursesData.slice(0, showAll ? coursesData.length : 8).forEach((c) => {
+    coursesContainer.insertAdjacentHTML(
+      "beforeend",
+      `
+      <div class="courses-box">
+        <a href="#" class="courses-box__link">
+          <img src="images/img-placeholder.jpg" alt="${
+            c.name
+          }" class="courses-box__img">
+        </a>
+
+        <div class="course_box__main">
+          <a href="#" class="course-box__title">${c.name}</a>
+
+          <div class="course-box__rating-teacher">
+            <div class="course-box__teacher">
+              <i class="fa-solid fa-chalkboard-user course-box__teacher-icon"></i>
+              <a href="#" class="course-box__teacher-link">${c.creator}</a>
+            </div>
+
+            <div class="course-box__rating">
+              <i class="fa-solid fa-star course-box__star"></i>
+              <i class="fa-solid fa-star course-box__star"></i>
+              <i class="fa-solid fa-star course-box__star"></i>
+              <i class="fa-solid fa-star course-box__star"></i>
+              <i class="fa-regular fa-star course-box__empty-star"></i>
+            </div>
+          </div>
+
+          <div class="course-box__status">
+            <div class="course-box__users-icon">
+              <i class="fa-solid fa-users course-box__users-icon"></i>
+              <span class="course-box__users-count">250</span>
+            </div>
+            <span class="course-box__price">${
+              c.price === 0 ? "Free" : "$" + c.price
+            }</span>
+          </div>
+        </div>
+
+        <div class="course-box__footer">
+          <a href="#" class="course-box__footer-link">
+            See More
+            <i class="fa-solid fa-arrow-right course-box__footer-icon"></i>
+          </a>
+        </div>
+      </div>
+      `
+    );
+  });
+};
+
+const getAllCoursesAndShow = async () => {
+  const showAllCoursesBtn = document.querySelector("#show-all-courses");
+
+  const res = await fetch("http://localhost:4000/v1/courses");
+  coursesData = await res.json();
+
+  renderCourses(showAllCourses);
+
+  showAllCoursesBtn.onclick = (e) => {
+    e.preventDefault();
+    showAllCourses = true;
+    renderCourses(showAllCourses);
+  };
+};
+
+getAllCoursesAndShow();
+
+export { showUsernameInNavbar, showCoursesInTopBar, getAllCoursesAndShow };
