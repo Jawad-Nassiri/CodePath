@@ -1,12 +1,8 @@
-import { register } from "./funcs/auth.js";
+import { register } from './funcs/auth.js';
 
+const signUpBtn = document.querySelector('#sign-up-btn');
 
-document.addEventListener("DOMContentLoaded", () => {
-  const signUpBtn = document.querySelector("#sign-up-btn");
-
-  signUpBtn.addEventListener("click", (event) => {
+signUpBtn.addEventListener('click', (event) => {
     event.preventDefault();
     register();
-  });
-});
-
+})
